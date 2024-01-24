@@ -1,0 +1,11 @@
+declare-user-mode subvert
+map global user y ':enter-user-mode subvert<ret>' -docstring 'enter subvert user mode'
+map global subvert a '<esc>| kak-subvert ada <ret>' -docstring 'Ada_Case'
+map global subvert c '<esc>| kak-subvert camel <ret>' -docstring 'camelCase'
+map global subvert k '<esc>| kak-subvert kebab <ret>' -docstring 'kebab-case'
+map global subvert p '<esc>| kak-subvert pascal <ret>' -docstring 'PascalCase'
+map global subvert . '<esc>| kak-subvert sentence <ret>' -docstring 'Sentence case'
+map global subvert s '<esc>| kak-subvert snake <ret>' -docstring 'snake_case'
+map global subvert S '<esc>| kak-subvert screaming <ret>' -docstring 'SCREAMING_CASE'
+map global subvert t '<esc>| kak-subvert train <ret>' -docstring 'Train-Case'
+map global subvert T '<esc>| kak-subvert title <ret>' -docstring 'Title Case'
