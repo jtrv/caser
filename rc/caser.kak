@@ -1,3 +1,4 @@
+provide-module caser %{
 define-command ada-case -docstring 'Ada_Case' %{
   execute-keys %{|caser ada <ret>}
 }
@@ -64,8 +65,10 @@ define-command train-case -docstring 'Train-Case' %{
 define-command upper-case -docstring 'UPPER CASE' %{
   execute-keys %{|caser upper <ret>}
 }
+}
 
 provide-module caser-recommended-bindings %{
+  require-module caser
   declare-user-mode case
   map global user c -docstring 'case' %{:enter-user-mode case<ret>}
   map global case a -docstring 'Ada_Case'          %{:ada-case <ret>}
