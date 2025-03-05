@@ -49,4 +49,12 @@ This should add a `caser` command to your $PATH.
 
 ## Kakoune
 
-After installing caser you can add something like [caser.kak](./rc/caser.kak) to your Kakoune config.
+After installing caser you can add something like [caser.kak](./rc/caser.kak) to your config.
+
+With [kak-bundle](https://github.com/jdugan6240/kak-bundle):
+
+```kakscript
+bundle caser https://github.com/jtrv/caser %{ require-module caser-recommended-bindings }
+bundle-install-hook caser %{ cargo install --path . ; cargo clean }
+```
+
